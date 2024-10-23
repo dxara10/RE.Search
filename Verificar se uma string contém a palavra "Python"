@@ -1,0 +1,10 @@
+import re
+
+padrao = r'Python'
+texto = 'Python é uma linguagem de programação poderosa.'
+
+match = re.search(padrao, texto)
+if match:
+    print("Correspondência encontrada:", match.group())
+else:
+    print("Nenhuma correspondência encontrada.")
