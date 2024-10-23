@@ -1,0 +1,10 @@
+import re
+
+padrao = r'\d{3}-\d{3}-\d{4}'
+texto = 'Entre em contato pelo número 123-456-7890.'
+
+match = re.search(padrao, texto)
+if match:
+    print("Correspondência encontrada:", match.group())
+else:
+    print("Nenhuma correspondência encontrada.")
