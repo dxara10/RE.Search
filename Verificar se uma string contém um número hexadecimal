@@ -1,0 +1,10 @@
+import re
+
+padrao = r'0[xX][0-9a-fA-F]+'
+texto = 'O código de cor é #00FF00.'
+
+match = re.search(padrao, texto)
+if match:
+    print("Correspondência encontrada:", match.group())
+else:
+    print("Nenhuma correspondência encontrada.")
