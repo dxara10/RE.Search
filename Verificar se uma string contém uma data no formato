@@ -1,0 +1,10 @@
+import re
+
+padrao = r'\b\d{2}/\d{2}/\d{4}\b'
+texto = 'A reunião está marcada para o dia 25/12/2023.'
+
+match = re.search(padrao, texto)
+if match:
+    print("Correspondência encontrada:", match.group())
+else:
+    print("Nenhuma correspondência encontrada.")
